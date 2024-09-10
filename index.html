@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M4 Editable Resume Builder</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <!-- Form for entering resume data -->
+    <form id="resume-form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="objective">Objective:</label>
+            <textarea id="objective" name="objective" required></textarea>
+        </div>
+        <div>
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea>
+        </div>
+        <div>
+            <label for="workExperience">Work Experience:</label>
+            <textarea id="workExperience" name="workExperience" required></textarea>
+        </div>
+        <div>
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" id="skills" name="skills" required>
+        </div>
+        <button type="submit" class="button">Generate Resume</button>
+    </form>
+
+    <!-- Resume display area -->
+    <div id="finalresume" style="display: none;"></div>
+
+    <!-- Buttons for actions -->
+    <button class="print" style="display: none;">Print Resume</button>
+    <button class="edit" style="display: none;">Edit Resume</button>
+    
+    <script src="app.js"></script>
+</body>
+</html>

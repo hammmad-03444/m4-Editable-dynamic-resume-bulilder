@@ -1,0 +1,99 @@
+/* styles.css */
+/* Basic styling for the form */
+#resume-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+#resume-form div {
+    margin-bottom: 15px;
+}
+
+#resume-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#resume-form input, #resume-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#resume-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#resume-form button:hover {
+    background-color: #45a049;
+}
+
+/* Basic styling for the resume */
+#finalresume {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    max-width: 80%;
+    height: 100%;
+    box-shadow: 0 0 10px rgb(37, 37, 37);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    
+}
+
+/* Styling for buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.print {
+    background-color: #008CBA;
+    color: white;
+}
+
+button.edit {
+    background-color: #f39c12;
+    color: white;
+}
+
+button.print:hover {
+    background-color: #007bb5;
+}
+
+button.edit:hover {
+    background-color: #e67e22;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* Hide specific elements during printing */
+    .print, .edit, .button {
+        display: none !important;
+    }
+    
+    /* Ensure the resume content is visible and fits the page */
+    #finalresume {
+        max-width: 100%;
+        overflow: visible;
+        display: block !important;
+    }
+}
+
